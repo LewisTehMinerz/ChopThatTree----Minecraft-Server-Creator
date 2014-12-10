@@ -1,2 +1,1 @@
 language: java
-install: ant com.lewislovesgames.chopthattree.minecraftservercreator.launchwrapper.main

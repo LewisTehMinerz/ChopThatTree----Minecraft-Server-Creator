@@ -1,5 +1,6 @@
 language: java
-pre_install: ant init
-install: ant compile
-install: ant dist
-install: ant clean
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk6
+  

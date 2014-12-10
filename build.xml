@@ -8,7 +8,18 @@
   <property name="build" location="build"/>
   <property name="dist"  location="dist"/>
   <target name="test">
-  
+   <junit>
+    <classpath>
+      <pathelement location="bin" />    
+      <pathelement location="lib/junit-4.10.jar"/>
+    </classpath>    
+    <batchtest>
+       <fileset dir="${src}">
+            <include name="*" />
+       </fileset>
+    </batchtest>
+    <formatter type="brief" usefile="false"/>
+  </junit>
   </target>
   <target name="init">
     <!-- Create the time stamp -->

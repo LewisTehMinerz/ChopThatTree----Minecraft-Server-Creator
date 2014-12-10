@@ -1,2 +1,5 @@
 language: java
-install: ant install-deps
+install: ant init
+install: ant compile
+install: ant dist
+install: ant clean

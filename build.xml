@@ -9,10 +9,11 @@
   <property name="dist"  location="dist"/>
   <property name="lib"   location="lib" />
   <target name="test">
+   <pathelement location="lib/junit-4.10.jar"/>
    <junit>
     <classpath>
       <pathelement location="bin" />    
-      <pathelement location="lib/junit-4.10.jar"/>
+      
     </classpath>    
     <batchtest>
        <fileset dir="${src}">
